@@ -1,0 +1,13 @@
+name: GitHub Actions - Push Branch Template
+run-name: Running - ${{ github.actor }} 
+on:
+  push:
+    branches:
+      - develop
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Comentário
+        run: |
+          echo "Comentário Push Workflow - branch!"
